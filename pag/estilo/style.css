@@ -19,7 +19,6 @@ nav{
   left: 0;
   width: 100%;
   z-index: 1000;
-  background-color: black;
 }
 a{
   padding: 10px;
@@ -32,14 +31,25 @@ a:hover{
   background-color: rgb(31, 31, 31);
 }
 section {
+  position: relative;
   width: 100vw;
   height: 100vh;
-  background: black;
+  background: rgba(0, 0, 0, 0.816);
   color: white;
 }
 #home {
-  overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url('/imagens/fundo.jpeg');
+  background-position: center right;
+  background-image: url('/imagens/fundo0.jpeg');
+}
+div#nome {
+  font-family: monospace;
+  font-variant: small-caps;
+  position: absolute;
+  top: 250px;
+  left: 100px;
+  font-size: 60px;
+  display: flex;
+  flex-flow: column wrap;
 }
